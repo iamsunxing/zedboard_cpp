@@ -10,7 +10,6 @@
 
 #include "client_socket.h"
 #include "socket_exception.h"
-//using namespace std;
 
 int fsize(FILE * fp)
 {
