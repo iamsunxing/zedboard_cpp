@@ -20,7 +20,7 @@
 using namespace std;
 //string server_address = "192.168.1.103";
 string server_address = "192.168.1.2";
-//const string Server_Address = "127.0.0.1";
+//const string server_address = "127.0.0.1";
 int    server_port    = 10001;
 
 DataPkg datapkg;
