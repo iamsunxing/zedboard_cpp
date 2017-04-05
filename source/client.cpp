@@ -32,7 +32,7 @@ DataPkg createpackage(DataPkg & datapkg,char* myjpg)
     datapkg.pkgh[1]='k';
     datapkg.pkgh[2]='g';
     datapkg.pkgh[3]='h';
-    datapkg.number=1;
+    datapkg.number =1;
     datapkg.size=fsize(fp);
     fread(datapkg.frame,1,datapkg.size,fp);
     fclose(fp);
@@ -40,8 +40,7 @@ DataPkg createpackage(DataPkg & datapkg,char* myjpg)
     datapkg.pkgt[1]='k';
     datapkg.pkgt[2]='g';
     datapkg.pkgt[3]='t';
-  //  printf("sizeof(char*)=%d\nsizeof(long)%d\n",sizeof(char*),sizeof(long));
-   // printf("sizeof(DataPkg)=%d\n",sizeof(DataPkg));
+
     printf("datapkg.size=%d\n",datapkg.size);
     return datapkg;
 }
