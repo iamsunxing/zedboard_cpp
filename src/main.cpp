@@ -10,13 +10,14 @@
 #include <linux/types.h>
 #include <linux/videodev2.h>
 #include <iostream>
-#include "Rgb2Bmp.h"
-#include "BMP2JPG.h"
-#include "socket.h"
-#include "client_socket.h"
-#include "client.h"
-#include "socket_exception.h"
-#include "webcam.h"
+
+#include "../header/BMP2JPG.h"
+#include "../header/client.h"
+#include "../header/client_socket.h"
+#include "../header/Rgb2Bmp.h"
+#include "../header/socket.h"
+#include "../header/socket_exception.h"
+#include "../header/webcam.h"
 using namespace std;
 //string server_address = "192.168.1.103";
 string server_address = "192.168.1.2";

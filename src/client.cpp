@@ -8,8 +8,8 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-#include "client_socket.h"
-#include "socket_exception.h"
+#include "../header/client_socket.h"
+#include "../header/socket_exception.h"
 
 int fsize(FILE * fp)
 {

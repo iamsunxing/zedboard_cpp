@@ -4,7 +4,7 @@
 #ifndef CLIENT_SOCKET_H
 #define CLIENT_SOCKET_H
 
-#include "socket.h"
+#include "../header/socket.h"
 class ClientSocket : private Socket
 {
 public:

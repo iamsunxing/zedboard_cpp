@@ -1,3 +1,5 @@
+#include "../header/webcam.h"
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -10,9 +12,9 @@
 #include <linux/types.h>
 #include <linux/videodev2.h>
 //#include <iostream>
-#include "Rgb2Bmp.h"
-#include "BMP2JPG.h"
-#include "webcam.h"
+
+#include "../header/BMP2JPG.h"
+#include "../header/Rgb2Bmp.h"
 static VideoBuffer * 		buffers;//缓存队列
 static struct v4l2_buffer 	buf;//帧缓存
 static   		int      	fd; //设备ID，或者说是设备句柄

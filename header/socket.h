@@ -4,7 +4,6 @@
 #ifndef SOCKET_H
 #define SOCKET_H
 
-
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -49,7 +48,6 @@ public:
     bool send ( const struct DataPkg ) const;
     int recv ( std::string& ) const;
 
-
     void set_non_blocking ( const bool );
 
     bool is_valid() const
@@ -58,11 +56,8 @@ public:
     }
 
 private:
-
     int m_sock;
     sockaddr_in m_addr;
-
-
 };
 
 
