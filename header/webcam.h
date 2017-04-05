@@ -1,6 +1,6 @@
 #ifndef WEBCAM_H
 #define WEBCAM_H
-
+#include <stddef.h>
 #define VIDEO_DEVICE 	"/dev/video0"
 #define BMP      		"image_bmp.bmp"
 #define YUV	        	"image_yuv.yuv"
