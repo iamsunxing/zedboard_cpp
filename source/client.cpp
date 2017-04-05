@@ -1,6 +1,3 @@
-
-#include "client_socket.h"
-#include "socket_exception.h"
 #include <iostream>
 #include <cstring>
 #include <stdio.h>
@@ -10,12 +7,11 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-using namespace std;
 
-//const string Server_Address = "192.168.1.2";
-//const int Server_Port=8080;
+#include "client_socket.h"
+#include "socket_exception.h"
+//using namespace std;
 
-//DataPkg datapkg;
 int fsize(FILE * fp)
 {
 	int num;
@@ -46,37 +42,7 @@ DataPkg createpackage(DataPkg & datapkg,char* myjpg)
     datapkg.pkgt[2]='g';
     datapkg.pkgt[3]='t';
   //  printf("sizeof(char*)=%d\nsizeof(long)%d\n",sizeof(char*),sizeof(long));
-    printf("sizeof(DataPkg)=%d\n",sizeof(DataPkg));
+   // printf("sizeof(DataPkg)=%d\n",sizeof(DataPkg));
     printf("datapkg.size=%d\n",datapkg.size);
     return datapkg;
 }
-/*
-
-int main0 ( int argc, char* argv[] )
-{
-    try
-    {
-        ClientSocket client_socket ( Server_Address, Server_Port );
-      //  string reply;
-      //  createpackage();
-        try
-        {
-            cout<<"send start...\n";
-           // client_socket << "Test message.";//send message
-            client_socket << datapkg;
-            cout<<"send OK\n";
-          //  client_socket >> reply; //receive message
-        }
-        catch ( SocketException& ) {}
-
-   //     cout << "We received this response from the server:\n" << reply << "\n";;
-
-    }
-    catch ( SocketException& e )
-    {
-        cout << "Exception was caught:" << e.description() << "\n";
-    }
-
-    return 0;
-}
-*/
